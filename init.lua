@@ -19,6 +19,7 @@ srv:listen(80,function(conn)
                 _GET[k] = v
             end
         end
+		buf = buf.."<style> h1 {color:red;} table{border: 1px solid black; border-collapse:collapse;} tr:hover {background-color: #f5f5f5} th { background-color: #4CAF50; color: white; padding: 15px;} td {padding: 15px;}</style>";
         buf = buf.."<h1> ESP8266 Web Server</h1>";
 		buf = buf.."<table><th colspan=2>GPIO Control</th>";
 		buf = buf.."<tr><td><p>GPIO0</td><td> <a href=\"?pin=ON1\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF1\"><button>OFF</button></a></p></td></tr>";

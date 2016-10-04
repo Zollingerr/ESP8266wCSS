@@ -1,5 +1,5 @@
 wifi.setmode(wifi.STATION)
-wifi.sta.config("Pretty Fly for a Wi-Fi","TP_ADMIN_2016@@HS")
+wifi.sta.config("SSID","Passwd")
 print(wifi.sta.getip())
 led1 = 3
 led2 = 4
